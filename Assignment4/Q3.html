@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Website Feedback</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br></form></div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br></form></div>
+
+            <label>Rate the Website:</label>
+            <div class="star-rating">
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">1★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">2★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">3★</label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">4★</label>
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5">5★</label>
+            </div>
+
+            <label for="feedback-type">Type of Feedback:</label>
+            <select id="feedback-type" name="feedback-type" required>
+                <option value="suggestion">Suggestion</option>
+                <option value="bug-report">Report Bug</option>
+                <option value="compliment">Feedback</option>
+            </select><br></body>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea><br></html>
+
+            <label>Would you recommend us?</label><br>
+            <input type="radio" id="recommend-yes" name="recommend" value="yes" required><label for="recommend-yes">Yes</label><br>
+            <input type="radio" id="recommend-no" name="recommend" value="no" required><label for="recommend-no">No</label>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

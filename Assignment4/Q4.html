@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Job Application Form</h2>
+        <form id="form" action="#" method="post" enctype="multipart/form-data">
+
+            <input type="radio" name="page" id="page1" checked style="display:none">
+            <input type="radio" name="page" id="page2" style="display:none">
+            <input type="radio" name="page" id="page3" style="display:none">
+            <input type="radio" name="page" id="page4" style="display:none">
+
+            <div class="page" id="section1">
+                <h3>Personal Details</h3>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="address" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="contact" placeholder="Contact Info" required>
+                </div>
+                <div class="buttons">
+                    <label for="page2"><button type="button">Next</button></label>
+                </div>
+            </div>
+
+            <div class="page" id="section2">
+                <h3>Educational Background</h3>
+                <div class="form-group">
+                    <input type="text" name="degree" placeholder="Degree" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="year" placeholder="Year of Passing" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="institution" placeholder="Institution Name" required>
+                </div>
+                <div class="buttons">
+                    <label for="page1"><button type="button">Previous</button></label>
+                    <label for="page3"><button type="button">Next</button></label>
+                </div>
+            </div>
+
+     
+            <div class="page" id="section3">
+                <h3>Work Experience</h3>
+                <div class="form-group">
+                    <input type="text" name="company" placeholder="Company Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="designation" placeholder="Designation" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="duration" placeholder="Duration" required>
+                </div>
+                <div class="buttons">
+                    <label for="page2"><button type="button">Previous</button></label>
+                    <label for="page4"><button type="button">Next</button></label>
+                </div>
+            </div>
+
+            
+            <div class="page" id="section4">
+                <h3>Upload Resume</h3>
+                <div class="form-group">
+                    <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="buttons">
+                    <label for="page3"><button type="button">Previous</button></label>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
